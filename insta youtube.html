@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>instagram</title>
+   
+ <style>
+ *{
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+ }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+ }
+ .wrapper{
+    display: flex;
+ }
+.left{
+    position: relative;
+}
+
+.screen{
+    height: 500px;
+    width: 260px;
+    position: absolute;
+    top: 30px;
+    left: 120px;
+}
+
+.panel{
+    width: 350px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 20px 40px;
+    margin: 10px 00px;
+    display: flex;
+    
+}
+.login{
+    flex-direction:column;
+   
+    align-items: center;
+}
+#logo{
+    height:120px;
+    width: 180px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.input-box{
+    width: 100%;
+    padding: 10px;
+    margin: bottom 10px;
+    background-color: #fafafa;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+}
+.input-box::placeholder{
+    color: #8a8a8a;
+    font-size: 12px;
+}
+.input-box:focus{
+    outline: none;
+    border: 1px solid  #8a8a8a;
+}
+.button{
+    width: 100%;
+    margin: 10px 0;
+    padding: 7px 0;
+    background-color: #b2dffc;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+
+}
+.divider{
+    display: flex;
+    font-size: 12px;
+    color: #8a8a8a;
+    font-weight: bold;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.line{
+    flex-grow: 1;
+    height: 1px;
+    background-color:black;
+}
+.fb{
+    margin: 20px 0;
+    text-decoration: none;
+    color: #3b5998;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline;
+}
+.fb-logo{
+  position: absolute;
+  position: relative;
+  right: 100px;
+  top: 45px;
+    
+   
+}
+
+
+
+
+</style>
+</head>
+<body>
+<section class="wrapper">
+
+<div class="left">
+     <img style="width:400px ; height: 550px;" src="Untitled.png" alt="phone">
+     <img  class="screen"  src="screenshot1.png" alt="">
+</div>
+
+<div class="right">
+<div class="panel login">
+<img id="logo" src="Instagram_logo.svg.jpg" alt="">
+<form >
+    <input 
+    class="input-box"
+     type="text"
+     name="username"
+     required
+     placeholder="phone number , usrename,or email">
+     <input 
+    class="input-box"
+     type="password"
+     name="password"
+     required
+     placeholder="password">
+     <input 
+     class="button"
+      type="submit"
+      name="login"
+      value="log In">
+ <div class="divider" >
+<div class="line"></div>
+        <p>OR</p>
+<div class="line"></div>
+</div>
+    <img class="fb-logo" src="fb.png" alt="">
+    <a class="fb" href="#"> Log in with facebook</a>
+    
+    <a class="forgot" href="#">forgot password</a>
+          
+</form>
+</div>
+
+<div class="panel singup">
+<p>Don't have an account?</p> 
+<a href="#">Sing up</a>
+</div>
+<div class="apps">
+<p>get the app</p>
+<div class="app-stores">
+    <img src="c5Rp7Ym-Klz.png" alt="">
+    <img src="EHY6QnZYdNX.png" alt="">
+</div>
+</div>
+</div>
+</section>
+<footer>
+    <p>footer content</p>
+</footer>
+
+  
+</body>
+</html>
